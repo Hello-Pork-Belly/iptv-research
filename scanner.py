@@ -9,9 +9,9 @@ import os
 # We use global aggregators that collect from TG, as well as direct M3U links.
 # These contain a lot of international / HK / TW sources.
 SEED_URLS = [
-    "https://raw.githubusercontent.com/YueChan/Live/main/IPTV.m3u",
-    "https://raw.githubusercontent.com/fanmingming/live/main/tv/m3u/ipv6.m3u",
-    "https://raw.githubusercontent.com/fanmingming/live/main/tv/m3u/global.m3u"
+    "https://raw.githubusercontent.com/iptv-org/iptv/master/streams/hk.m3u",
+    "https://raw.githubusercontent.com/iptv-org/iptv/master/streams/tw.m3u",
+    "https://raw.githubusercontent.com/fanmingming/live/main/tv/m3u/ipv6.m3u"
 ]
 
 # Strictly Hong Kong and Taiwan keywords. NO CCTV, NO Mainland Satellite.
