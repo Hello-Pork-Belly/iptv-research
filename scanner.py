@@ -95,9 +95,21 @@ def main():
         all_channels.extend(parsed)
         print(f"Found {len(parsed)} streams.")
         
+    # Load Blacklist
+    blacklist = set()
+    if os.path.exists("blacklist.txt"):
+        with open("blacklist.txt", "r", encoding="utf-8") as bf:
+            for line in bf:
+                bl_url = line.strip()
+                if bl_url:
+                    blacklist.add(bl_url)
+    print(f"Loaded {len(blacklist)} dead URLs from blacklist.")
+
     candidate_dict = {}
     for name, url in all_channels:
         if is_target_channel(name):
+            if url in blacklist:
+                continue
             clean_name = name.replace("高清", "").replace("1080P", "").replace("FHD", "").strip()
             # Clean up messy TG tags
             clean_name = re.sub(r'\[.*?\]', '', clean_name).strip()
