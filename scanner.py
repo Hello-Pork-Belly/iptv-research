@@ -11,12 +11,13 @@ import os
 SEED_URLS = [
     "https://raw.githubusercontent.com/iptv-org/iptv/master/streams/hk.m3u",
     "https://raw.githubusercontent.com/iptv-org/iptv/master/streams/tw.m3u",
-    "https://raw.githubusercontent.com/fanmingming/live/main/tv/m3u/ipv6.m3u"
+    "https://raw.githubusercontent.com/fanmingming/live/main/tv/m3u/ipv6.m3u",
+    "https://raw.githubusercontent.com/yuanzl77/IPTV/main/live.txt"
 ]
 
 # Strictly Hong Kong and Taiwan keywords. NO CCTV, NO Mainland Satellite.
 TARGET_CHANNELS = [
-    "香港", "台湾", "TVB", "翡翠", "明珠", "J2", "无锡新闻", # Wait, ignore wuxi
+    "香港", "台湾", "TVB", "翡翠", "明珠", "J2", "无锡新闻",
     "凤凰", "东森", "中天", "纬来", "民视", "三立", "华视", "台视", "中视", 
     "年代", "非凡", "八大", "ViuTV", "HOY", "有线", "星空", "HBO", "FOX", "DISCOVERY",
     "HK", "TW"
@@ -25,7 +26,7 @@ TARGET_CHANNELS = [
 # Exclude list to filter out falsely matched mainland channels or irrelevant stuff
 EXCLUDE_KEYWORDS = ["CCTV", "卫视", "内蒙", "新疆", "新闻联播", "中央"]
 
-MAX_URLS_PER_CHANNEL = 5
+MAX_URLS_PER_CHANNEL = 10
 
 def download_list(url):
     try:
@@ -51,16 +52,19 @@ def parse_m3u_or_txt(content):
                 current_name = parts[-1].strip()
         elif line.startswith("http"):
             if current_name:
-                channels.append((current_name, line))
+                # Remove suffix like $LR... from txt sources
+                url = line.split('$')[0]
+                channels.append((current_name, url))
                 current_name = ""
             else:
-                channels.append(("Unknown", line))
+                url = line.split('$')[0]
+                channels.append(("Unknown", url))
         
         elif "," in line and "http" in line:
             parts = line.split(',')
             if len(parts) == 2:
                 name = parts[0].strip()
-                url = parts[1].strip()
+                url = parts[1].split('$')[0].strip()
                 if url.startswith("http"):
                     channels.append((name, url))
                     
@@ -78,26 +82,6 @@ def is_target_channel(name):
     for target in TARGET_CHANNELS:
         if target.upper() in name_upper:
             return True
-    return False
-
-def check_url_ffprobe(url):
-    """ Use ffprobe to check if the HK/TW stream is alive """
-    cmd = [
-        "ffprobe", 
-        "-v", "error", 
-        "-show_entries", "stream=codec_type", 
-        "-timeout", "5000000", 
-        "-i", url
-    ]
-    try:
-        # Increase timeout slightly since global sources might take a second to handshake
-        result = subprocess.run(cmd, stdout=subprocess.PIPE, stderr=subprocess.PIPE, timeout=8)
-        if result.returncode == 0 and ("video" in result.stdout.decode() or "audio" in result.stdout.decode()):
-            return True
-    except subprocess.TimeoutExpired:
-        pass
-    except Exception:
-        pass
     return False
 
 def main():
@@ -119,33 +103,18 @@ def main():
             clean_name = re.sub(r'\[.*?\]', '', clean_name).strip()
             
             if clean_name not in candidate_dict:
-                candidate_dict[clean_name] = set()
-            candidate_dict[clean_name].add(url)
+                candidate_dict[clean_name] = []
+            if url not in candidate_dict[clean_name]:
+                candidate_dict[clean_name].append(url)
             
     print(f"\nFiltered down to {len(candidate_dict)} unique HK/TW channels.")
     
     final_dict = {}
-    MAX_WORKERS = 15 # Can be higher since global routing is better from GitHub US
-    
-    with concurrent.futures.ThreadPoolExecutor(max_workers=MAX_WORKERS) as executor:
-        for channel_name, urls in candidate_dict.items():
-            print(f"Testing {channel_name} (Found {len(urls)} candidates)...")
-            final_dict[channel_name] = []
-            
-            future_to_url = {executor.submit(check_url_ffprobe, u): u for u in urls}
-            
-            for future in concurrent.futures.as_completed(future_to_url):
-                url = future_to_url[future]
-                is_alive = future.result()
-                if is_alive:
-                    final_dict[channel_name].append(url)
-                    if len(final_dict[channel_name]) >= MAX_URLS_PER_CHANNEL:
-                        break
-            
-            if len(final_dict[channel_name]) > 0:
-                print(f"  -> Kept {len(final_dict[channel_name])} alive URLs.")
-            else:
-                print(f"  -> No alive URLs found.")
+    # Bypass ffprobe testing as US servers timeout on Asian proxy IPs
+    for channel_name, urls in candidate_dict.items():
+        # Keep up to MAX_URLS_PER_CHANNEL
+        final_dict[channel_name] = urls[:MAX_URLS_PER_CHANNEL]
+        print(f"Added {len(final_dict[channel_name])} URLs for {channel_name}.")
 
     output_file = "best_tv.m3u"
     print(f"\nWriting results to {output_file}...")
