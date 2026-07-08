@@ -1,4 +1,16 @@
 #EXTM3U x-tvg-url="https://live.fanmingming.com/e.xml"
+#EXTINF:-1 group-title="港台精选",翡翠台(字幕)
+https://cdn.qd.je/163189/fct2
+#EXTINF:-1 group-title="港台精选",明珠台(字幕)
+https://cdn.qd.je/163189/mzt
+#EXTINF:-1 group-title="港台精选",TVB Plus(字幕)
+https://cdn.qd.je/163189/tvbp
+#EXTINF:-1 group-title="港台精选",翡翠台(WebVTT字幕)
+https://cdn.qd.je/163189/fctvtt
+#EXTINF:-1 group-title="港台精选",明珠台(WebVTT字幕)
+https://cdn.qd.je/163189/mztvtt
+#EXTINF:-1 group-title="港台精选",TVB Plus(WebVTT字幕)
+https://cdn.qd.je/163189/tvbpvtt
 #EXTINF:-1 group-title="港台精选",翡翠台
 http://120.234.44.98:18180/TV00000000000000000032@HHZT
 #EXTINF:-1 group-title="港台精选",明珠台
@@ -13,15 +25,3 @@ http://120.234.44.98:18180/TV00000000000000000008@HHZT
 http://120.234.44.98:18180/TV00000000000000000009@HHZT
 #EXTINF:-1 group-title="港台精选",凤凰香港台
 http://120.234.44.98:18180/TV00000000000000000024@HHZT
-#EXTINF:-1 group-title="港台精选",翡翠台(字幕)
-https://cdn.qd.je/163189/fct2
-#EXTINF:-1 group-title="港台精选",明珠台(字幕)
-https://cdn.qd.je/163189/mzt
-#EXTINF:-1 group-title="港台精选",TVB Plus(字幕)
-https://cdn.qd.je/163189/tvbp
-#EXTINF:-1 group-title="港台精选",翡翠台(WebVTT字幕)
-https://cdn.qd.je/163189/fctvtt
-#EXTINF:-1 group-title="港台精选",明珠台(WebVTT字幕)
-https://cdn.qd.je/163189/mztvtt
-#EXTINF:-1 group-title="港台精选",TVB Plus(WebVTT字幕)
-https://cdn.qd.je/163189/tvbpvtt
