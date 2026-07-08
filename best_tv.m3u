@@ -1,4 +1,18 @@
 #EXTM3U x-tvg-url="https://live.fanmingming.com/e.xml"
+#EXTINF:-1 group-title="港台精选",翡翠台
+http://120.234.44.98:18180/TV00000000000000000032@HHZT
+#EXTINF:-1 group-title="港台精选",明珠台
+http://120.234.44.98:18180/TV00000000000000000035@HHZT
+#EXTINF:-1 group-title="港台精选",viutv
+http://120.234.44.98:18180/TV00000000000000000037@HHZT
+#EXTINF:-1 group-title="港台精选",viutv6
+http://120.234.44.98:18180/TV00000000000000000084@HHZT
+#EXTINF:-1 group-title="港台精选",凤凰中文台
+http://120.234.44.98:18180/TV00000000000000000008@HHZT
+#EXTINF:-1 group-title="港台精选",凤凰资讯台
+http://120.234.44.98:18180/TV00000000000000000009@HHZT
+#EXTINF:-1 group-title="港台精选",凤凰香港台
+http://120.234.44.98:18180/TV00000000000000000024@HHZT
 #EXTINF:-1 group-title="港台精选",翡翠台(字幕)
 https://cdn.qd.je/163189/fct2
 #EXTINF:-1 group-title="港台精选",明珠台(字幕)
