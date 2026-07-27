@@ -1,4 +1,26 @@
 #EXTM3U x-tvg-url="https://live.fanmingming.com/e.xml"
+#EXTINF:-1 group-title="港台精选",中天新聞台
+http://4gtv.cnlive.club/channel/3824d067/index.m3u8?q=1782639885837
+#EXTINF:-1 group-title="港台精选",TVBS
+http://4gtv.cnlive.club/channel/58f128b2/index.m3u8?q=1782639885837
+#EXTINF:-1 group-title="港台精选",TVBS台劇台
+http://4gtv.cnlive.club/channel/49342c47/index.m3u8?q=1782639885837
+#EXTINF:-1 group-title="港台精选",TVBS新聞
+http://4gtv.cnlive.club/channel/n1ea96b20/index.m3u8?q=1782639885837
+#EXTINF:-1 group-title="港台精选",TVBS歡樂台
+http://4gtv.cnlive.club/channel/498f035d/index.m3u8?q=1782639885837
+#EXTINF:-1 group-title="港台精选",TVBS精采台
+http://4gtv.cnlive.club/channel/49d50255/index.m3u8?q=1782639885837
+#EXTINF:-1 group-title="港台精选",TVBS綜藝台
+http://4gtv.cnlive.club/channel/49d6d25d/index.m3u8?q=1782639885837
+#EXTINF:-1 group-title="港台精选",三立新聞iNEWS
+http://4gtv.cnlive.club/channel/4fa717ad/index.m3u8?q=1782639885837
+#EXTINF:-1 group-title="港台精选",三立綜合台
+http://4gtv.cnlive.club/channel/45c7d3e3/index.m3u8?q=1782639885837
+#EXTINF:-1 group-title="港台精选",八大精彩台
+http://4gtv.cnlive.club/channel/6626a9ca/index.m3u8?q=1782639885837
+#EXTINF:-1 group-title="港台精选",八大綜藝台
+http://4gtv.cnlive.club/channel/662e9334/index.m3u8?q=1782639885837
 #EXTINF:-1 group-title="港台精选",👖裤佬Twitch直播
 https://twitch.445569.xyz/live.m3u
 #EXTINF:-1 group-title="港台精选",Me Marie Twerks For A Facial
