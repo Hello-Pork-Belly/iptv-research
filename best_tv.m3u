@@ -1,4 +1,20 @@
 #EXTM3U x-tvg-url="https://live.fanmingming.com/e.xml"
+#EXTINF:-1 group-title="港台精选",NHK BS101 Premium (Contra)
+http://136.158.97.2:6610/001/2/ch00000090990000001214/manifest.mpd?AuthInfo=v87HD9rEhwHiAdYyrP20Tg5pgSMSITY%2FHYvvCWJRp%2BqvraU%2BA8%2FN%2B6NCam0oBPn1ytokK1MIobcue1ImXa0ZEA%3D%3D&version=v1.0&BreakPoint=0&virtualDomain=001.live_hls.zte.com&programid=ch00000000000000001445&contentid=ch00000000000000001445&videoid=ch00000090990000001214&recommendtype=0&userid=1516257620825&boid=001&stbid=02%3A00%3A00%3A00%3A00%3A00&terminalflag=1&profilecode=&usersessionid=N8EJG3JY51DXXX&NeedJITP=1&JITPMediaType=DASH&JITPDRMType=NO
+#EXTINF:-1 group-title="港台精选",NHK G Tokyo (AVG )
+http://tsb-mega.i9.ee/stream/nhkg_avc_1080p
+#EXTINF:-1 group-title="港台精选",NHK G Tokyo (MOV3)
+https://nhk4.mov3.co/hls/nhk.m3u8
+#EXTINF:-1 group-title="港台精选",NHK G Yamagata (Test Transmission)
+https://tv-stream-test.daydreamer-json.cc/fe8bf835820fb530467f75a9cb761504/master.m3u8
+#EXTINF:-1 group-title="港台精选",NHK World Japan (Main Ch)
+https://media-osa.hls.nhkworld.jp/hls/w/live/master.m3u8
+#EXTINF:-1 group-title="港台精选",NHK World Japan (Backup Feed)
+https://media-tyo.hls.nhkworld.jp/hls/w/live/master.m3u8
+#EXTINF:-1 group-title="港台精选",NHK World Japan (FULL HD)
+https://masterpl.hls.nhkworld.jp/hls/w/live/smarttv.m3u8
+#EXTINF:-1 group-title="港台精选",NHK World (Tokyo Landscape)
+https://masterpl.hls.nhkworld.jp/hls/wp/live/master.m3u8
 #EXTINF:-1 group-title="港台精选",中天新聞台
 http://4gtv.cnlive.club/channel/3824d067/index.m3u8?q=1782639885837
 #EXTINF:-1 group-title="港台精选",TVBS
