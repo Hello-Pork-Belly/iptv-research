@@ -1,4 +1,40 @@
 #EXTM3U x-tvg-url="https://live.fanmingming.com/e.xml"
+#EXTINF:-1 group-title="港台精选",NHK G
+https://naori-test.netgenx.site/pxx.php?shk_cid=hdgd01
+#EXTINF:-1 group-title="港台精选",NHK G
+https://nl.utako.moe/NHK_G/index.m3u8
+#EXTINF:-1 group-title="港台精选",NHK G (Sub Ch.)
+http://haru.charandom.blog/stream/jp/nhk_g_(subch)/stream-output.m3u8?mode=hls
+#EXTINF:-1 group-title="港台精选",NHK E
+https://naori-test.netgenx.site/pxx.php?shk_cid=hdgd02
+#EXTINF:-1 group-title="港台精选",NHK E
+https://nl.utako.moe/NHK_E/index.m3u8
+#EXTINF:-1 group-title="港台精选",NHK G Osaka
+https://naori-test.netgenx.site/pxx.php?shk_cid=gx06
+#EXTINF:-1 group-title="港台精选",NHK World-Japan
+https://media-tyo.hls.nhkworld.jp/hls/w/live/master.m3u8
+#EXTINF:-1 group-title="港台精选",NHK BS
+https://naori-test.netgenx.site/pxx.php?shk_cid=bs11
+#EXTINF:-1 group-title="港台精选",NHK BS
+https://nl.utako.moe/NHK_BS/index.m3u8
+#EXTINF:-1 group-title="港台精选",NHK BS (Sub Ch.)
+http://haru.charandom.blog/stream/jp/nhk_bs_(subch)/stream-output.m3u8?mode=hls
+#EXTINF:-1 group-title="港台精选",NHK BS4K
+https://naori-test.netgenx.site/pxx.php?shk_cid=bs01
+#EXTINF:-1 group-title="港台精选",NHK BS4K
+https://nl.utako.moe/bsp4k/index.m3u8
+#EXTINF:-1 group-title="港台精选",Golf Network
+https://naori-test.netgenx.site/pxx.php?shk_cid=cs03
+#EXTINF:-1 group-title="港台精选",Golf Network
+https://nl.utako.moe/golf_network/index.m3u8
+#EXTINF:-1 group-title="港台精选",Fuji TV TWO
+http://haru.charandom.blog/stream/jp/fuji_tv_two/stream-output.m3u8?mode=hls
+#EXTINF:-1 group-title="港台精选",Cartoon Network
+https://naori-test.netgenx.site/pxx.php?shk_cid=cs25
+#EXTINF:-1 group-title="港台精选",Cartoon Network
+https://nl.utako.moe/cartoon_network/index.m3u8
+#EXTINF:-1 group-title="港台精选",Discovery Channel
+https://naori-test.netgenx.site/pxx.php?shk_cid=cs08
 #EXTINF:-1 group-title="港台精选",NHK BS101 Premium (Contra)
 http://136.158.97.2:6610/001/2/ch00000090990000001214/manifest.mpd?AuthInfo=v87HD9rEhwHiAdYyrP20Tg5pgSMSITY%2FHYvvCWJRp%2BqvraU%2BA8%2FN%2B6NCam0oBPn1ytokK1MIobcue1ImXa0ZEA%3D%3D&version=v1.0&BreakPoint=0&virtualDomain=001.live_hls.zte.com&programid=ch00000000000000001445&contentid=ch00000000000000001445&videoid=ch00000090990000001214&recommendtype=0&userid=1516257620825&boid=001&stbid=02%3A00%3A00%3A00%3A00%3A00&terminalflag=1&profilecode=&usersessionid=N8EJG3JY51DXXX&NeedJITP=1&JITPMediaType=DASH&JITPDRMType=NO
 #EXTINF:-1 group-title="港台精选",NHK G Tokyo (AVG )
@@ -65,42 +101,6 @@ http://cristalfumacento.xyz:80/movie/43416216/78523449/2324246.mp4
 http://cristalfumacento.xyz:80/movie/43416216/78523449/2324139.mp4
 #EXTINF:-1 group-title="港台精选",Yngr Kira Fox Scene
 http://cristalfumacento.xyz:80/movie/43416216/78523449/2324042.mp4
-#EXTINF:-1 group-title="港台精选",NHK G
-https://naori-test.netgenx.site/pxx.php?shk_cid=hdgd01
-#EXTINF:-1 group-title="港台精选",NHK G
-https://nl.utako.moe/NHK_G/index.m3u8
-#EXTINF:-1 group-title="港台精选",NHK G (Sub Ch.)
-http://haru.charandom.blog/stream/jp/nhk_g_(subch)/stream-output.m3u8?mode=hls
-#EXTINF:-1 group-title="港台精选",NHK E
-https://naori-test.netgenx.site/pxx.php?shk_cid=hdgd02
-#EXTINF:-1 group-title="港台精选",NHK E
-https://nl.utako.moe/NHK_E/index.m3u8
-#EXTINF:-1 group-title="港台精选",NHK G Osaka
-https://naori-test.netgenx.site/pxx.php?shk_cid=gx06
-#EXTINF:-1 group-title="港台精选",NHK World-Japan
-https://media-tyo.hls.nhkworld.jp/hls/w/live/master.m3u8
-#EXTINF:-1 group-title="港台精选",NHK BS
-https://naori-test.netgenx.site/pxx.php?shk_cid=bs11
-#EXTINF:-1 group-title="港台精选",NHK BS
-https://nl.utako.moe/NHK_BS/index.m3u8
-#EXTINF:-1 group-title="港台精选",NHK BS (Sub Ch.)
-http://haru.charandom.blog/stream/jp/nhk_bs_(subch)/stream-output.m3u8?mode=hls
-#EXTINF:-1 group-title="港台精选",NHK BS4K
-https://naori-test.netgenx.site/pxx.php?shk_cid=bs01
-#EXTINF:-1 group-title="港台精选",NHK BS4K
-https://nl.utako.moe/bsp4k/index.m3u8
-#EXTINF:-1 group-title="港台精选",Golf Network
-https://naori-test.netgenx.site/pxx.php?shk_cid=cs03
-#EXTINF:-1 group-title="港台精选",Golf Network
-https://nl.utako.moe/golf_network/index.m3u8
-#EXTINF:-1 group-title="港台精选",Fuji TV TWO
-http://haru.charandom.blog/stream/jp/fuji_tv_two/stream-output.m3u8?mode=hls
-#EXTINF:-1 group-title="港台精选",Cartoon Network
-https://naori-test.netgenx.site/pxx.php?shk_cid=cs25
-#EXTINF:-1 group-title="港台精选",Cartoon Network
-https://nl.utako.moe/cartoon_network/index.m3u8
-#EXTINF:-1 group-title="港台精选",Discovery Channel
-https://naori-test.netgenx.site/pxx.php?shk_cid=cs08
 #EXTINF:-1 group-title="港台精选",NHK World
 http://124.222.153.240/kakaotv/get_channel.php?channel=nhk_world#.m3u8
 #EXTINF:-1 group-title="港台精选",NHK G (Server 2)
