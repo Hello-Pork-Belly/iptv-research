@@ -1,4 +1,14 @@
 #EXTM3U x-tvg-url="https://live.fanmingming.com/e.xml"
+#EXTINF:-1 group-title="港台精选",VF HBO
+http://91ea1cae.edemist.com/iptv/YPYAYTZV9TYE5V/19428/index.m3u8
+#EXTINF:-1 group-title="港台精选",Cartoon Network
+http://45.132.87.69:8080/cartoon_network/index.m3u8
+#EXTINF:-1 group-title="港台精选",Cartoon Network
+https://naori-test.netgenx.site/pxx.php?shk_cid=cs25
+#EXTINF:-1 group-title="港台精选",Cartoon Network
+https://nl.utako.moe/cartoon_network/index.m3u8
+#EXTINF:-1 group-title="港台精选",FoxKids Remastered
+http://kinowalk.hopto.org/foxkids_remastered_live
 #EXTINF:-1 group-title="港台精选",NHK G
 https://naori-test.netgenx.site/pxx.php?shk_cid=hdgd01
 #EXTINF:-1 group-title="港台精选",NHK G
@@ -29,10 +39,6 @@ https://naori-test.netgenx.site/pxx.php?shk_cid=cs03
 https://nl.utako.moe/golf_network/index.m3u8
 #EXTINF:-1 group-title="港台精选",Fuji TV TWO
 http://haru.charandom.blog/stream/jp/fuji_tv_two/stream-output.m3u8?mode=hls
-#EXTINF:-1 group-title="港台精选",Cartoon Network
-https://naori-test.netgenx.site/pxx.php?shk_cid=cs25
-#EXTINF:-1 group-title="港台精选",Cartoon Network
-https://nl.utako.moe/cartoon_network/index.m3u8
 #EXTINF:-1 group-title="港台精选",Discovery Channel
 https://naori-test.netgenx.site/pxx.php?shk_cid=cs08
 #EXTINF:-1 group-title="港台精选",NHK BS101 Premium (Contra)
