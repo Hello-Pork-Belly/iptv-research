@@ -1,4 +1,10 @@
 #EXTM3U x-tvg-url="https://live.fanmingming.com/e.xml"
+#EXTINF:-1 group-title="港台精选",翡翠台4K(字幕)
+http://cdn6.123.rr.kg/163189/fct4k
+#EXTINF:-1 group-title="港台精选",翡翠台(字幕)
+http://cdn6.123.rr.kg/163189/fct
+#EXTINF:-1 group-title="港台精选",翡翠台(字幕)
+https://cdn.qd.je/163189/fct2
 #EXTINF:-1 group-title="港台精选",305 - TVB Classic
 https://linearjitp-playback.astro.com.my/dash-wv/linear/5016/default_primary.mpd
 #EXTINF:-1 group-title="港台精选",310 - TVB Jade
@@ -179,8 +185,6 @@ http://cdns.jp-primehome.com:8000/zhongying/live/playlist.m3u8?cid=cs03
 http://cdns.jp-primehome.com:8000/zhongying/live/playlist.m3u8?cid=cs25
 #EXTINF:-1 group-title="港台精选",Discovery Channel (Primehome)
 http://cdns.jp-primehome.com:8000/zhongying/live/playlist.m3u8?cid=cs08
-#EXTINF:-1 group-title="港台精选",翡翠台(字幕)
-https://cdn.qd.je/163189/fct2
 #EXTINF:-1 group-title="港台精选",明珠台(字幕)
 https://cdn.qd.je/163189/mzt
 #EXTINF:-1 group-title="港台精选",TVB Plus(字幕)
